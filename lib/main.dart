@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 //remember the main method
-void main() {
+
+import 'package:url_launcher/url_launcher_string.dart';void main() {
   runApp(UF());
 }
 
@@ -51,7 +52,6 @@ class UF extends StatelessWidget {
                 Card(
                   margin: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                   child: ListTile(
-
                     leading: Icon(
                       Icons.phone,
                       color: Colors.teal.shade900,
@@ -63,17 +63,22 @@ class UF extends StatelessWidget {
                         color: Colors.teal.shade900
                       ),
                     ),
+                    onTap: () => launchUrlString('tel:+263776701531'),
                   ),
                 ),
 
-                Card(
-                  margin: EdgeInsets.only(left: 20,right: 20),
+                GestureDetector(
+                  onTap: () =>launchUrlString('mailto:chimototofara@gmail.com'),
+                  child: Card(
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    child: ListTile(
+                    leading:Icon(Icons.email,color: Colors.teal.shade900,size: 30,),
+                     title: Text('chimototofara@gmail.com',style: TextStyle(color: Colors.teal.shade900,fontSize: 19),
+                     ),
+                      ),
 
-                  child: ListTile(
-                  leading:Icon(Icons.email,color: Colors.teal.shade900,size: 30,),
-                   title: Text('chimototofara@gmail.com',style: TextStyle(color: Colors.teal.shade900,fontSize: 19),),
                     ),
-                  ),
+                ),
               ],
             ),
           ),
@@ -82,3 +87,5 @@ class UF extends StatelessWidget {
     );
   }
 }
+
+
