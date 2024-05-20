@@ -49,6 +49,19 @@ class UF extends StatelessWidget {
                     color: Colors.teal.shade200,
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10,vertical: 20),
+                  child: ListTile(
+                    tileColor: Colors.white,
+                    onTap: () =>launchUrlString('mailto:chimototofara@gmail.com'),
+                    hoverColor: Colors.red,
+
+                    leading: Icon(
+                      Icons.mail,
+                    ),
+                    title: Text('chimototofara"gmail.com',style: TextStyle(fontSize: 20),),
+                  ),
+                ),
 
 
 
