@@ -49,36 +49,9 @@ class UF extends StatelessWidget {
                     color: Colors.teal.shade200,
                   ),
                 ),
-                Card(
-                  margin: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade900,
-                    ),
-                    title: Text(
-                      '+ 263 776 70 1531',
-                      style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.teal.shade900
-                      ),
-                    ),
-                    onTap: () => launchUrlString('tel:+263776701531'),
-                  ),
-                ),
 
-                GestureDetector(
-                  onTap: () =>launchUrlString('mailto:chimototofara@gmail.com'),
-                  child: Card(
-                    margin: EdgeInsets.only(left: 20,right: 20),
-                    child: ListTile(
-                    leading:Icon(Icons.email,color: Colors.teal.shade900,size: 30,),
-                     title: Text('chimototofara@gmail.com',style: TextStyle(color: Colors.teal.shade900,fontSize: 19),
-                     ),
-                      ),
 
-                    ),
-                ),
+
               ],
             ),
           ),
